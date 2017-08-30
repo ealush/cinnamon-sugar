@@ -1,0 +1,126 @@
+@import '../base.scss';
+
+@keyframes hide {
+    0% { transform: scale(1); }
+    100% { transform: scale(.7); }
+}
+
+@keyframes showUp {
+    0% { transform: translateY(-25px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes showDown {
+    0% { transform: translateY(25px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes showIcon {
+    0% { transform: scale(.6); }
+    60% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.action-wrapper.shown .toast .cinnamon-sugar-crisp aside {
+    animation: showIcon .5s;
+}
+
+.butter-toast-tray[class*="top-"] .action-wrapper.shown .toast .cinnamon-sugar-crisp {
+    animation: showUp .4s;
+}
+
+.butter-toast-tray[class*="bottom-"] .action-wrapper.shown .toast .cinnamon-sugar-crisp {
+    animation: showDown .4s;
+}
+
+.action-wrapper:not(.shown) .toast .cinnamon-sugar-crisp {
+    z-index: 0;
+    animation: hide 1s;
+}
+
+.cinnamon-sugar-crisp {
+    font-size: 11px;
+    line-height: 14px;
+    position: relative;
+    background-color: $md-white;
+    min-height: 50px;
+    width: 400px;
+    padding: 10px 45px 10px 60px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 15px $md-grey-200;
+    border-radius: 5px;
+    transition: box-shadow .3s;
+    z-index: 1;
+
+    &:hover {
+        box-shadow: 0 3px 15px $md-grey-300;
+    }
+
+    .title {
+        padding-bottom: 5px;
+        color: $md-grey-700;
+        font-size: 15px;
+    }
+
+    .message {
+        color: $md-grey-500;
+    }
+
+    a.btn-dismiss {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 22px;
+        color: $md-grey-400;
+        transition: color .2s, background-color .4s;
+
+        &:hover {
+            background-color: $md-grey-50;
+        }
+
+        &:active {
+            background-color: $md-grey-100;
+        }
+    }
+
+    aside {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 60px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &:before {
+            font-family: 'FontAwesome';
+            font-size: 25px;
+        }
+    }
+
+    &.success aside:before { content: '\f00c'; color: $md-green-400; }
+    &.error aside:before { content: '\f00d'; color: $md-red-400; }
+    &.like aside:before { content: '\f004'; color: $md-red-600; }
+    &.info aside:before { content: '\f128'; color: $md-blue-400; }
+    &.danger aside:before { content: '\f071'; color: $md-orange-400; }
+    &.golden aside:before { content: '\f005'; color: $md-amber-400; }
+    &.dark aside:before { content: '\f0f3'; color: $md-grey-600; }
+    &.default aside:before { content: '\f0f3'; color: $md-grey-400; }
+
+    &.icn-check aside:before { content: '\f00c'; };
+    &.icn-heart aside:before { content: '\f004'; };
+    &.icn-star aside:before { content: '\f005'; };
+    &.icn-exclamation aside:before { content: '\f071'; };
+    &.icn-question aside:before { content: '\f128'; };
+    &.icn-times aside:before { content: '\f00d'; };
+    &.icn-bell aside:before { content: '\f0f3'; };
+}
