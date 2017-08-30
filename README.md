@@ -1,4 +1,6 @@
 # Cinnamon Sugar
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ealush/cinnamon-sugar.svg)](https://greenkeeper.io/)
 Cinnamon sugar is a companion package for [Butter-Toast](https://ealush.github.io/butter-toast/#!).
 While Butter Toast provides a smooth toast stacking interface, Cinnamon-sugar is intended to be used as a styling library, fully compatible with Butter-Toast.
 
