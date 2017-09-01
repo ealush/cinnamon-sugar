@@ -50,6 +50,7 @@
     box-shadow: 0 3px 15px $md-grey-200;
     border-radius: 5px;
     transition: box-shadow .3s;
+    overflow: hidden;
     z-index: 1;
 
     &:hover {

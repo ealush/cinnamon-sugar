@@ -1,6 +1,6 @@
 {
   "name": "cinnamon-sugar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Companion package for butter-toast, provieds styling",
   "main": "./dist/index.js",
   "scripts": {
