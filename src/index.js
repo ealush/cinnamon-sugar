@@ -1,5 +1,5 @@
 import crisp from './crisp';
 
-export default {
+export {
     crisp
 };
