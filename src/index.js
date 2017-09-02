@@ -1,5 +1,8 @@
+import wrapper from './wrapper';
 import crisp from './crisp';
 
-export {
+const kinds = {
     crisp
 };
+
+export default (props) => wrapper(kinds, props);

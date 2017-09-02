@@ -1,17 +1,17 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import { storiesOf } from '@kadira/storybook';
 import { quotes, rand, themes } from './helpers';
-import { crisp } from '../src';
+import cinnamonSugar from '../src';
 import ButterToast from 'butter-toast';
 import './style.scss';
 
-function raise() {
-    ButterToast.raise(crisp({
+function raise(extra) {
+    ButterToast.raise(cinnamonSugar({
         title: rand(['Success!', 'Error', 'Danger!', 'FYI']),
         message: rand(quotes),
         theme: rand(themes),
-        sticky: true
-    }));
+        kind: 'crisp'
+    }), extra);
 }
 
 function raiseRandomTimeout() {

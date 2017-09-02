@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './style.scss';
 
-function Component({ message, title, theme='success', icon, dismiss }) {
+function crisp({ message, title, theme='success', icon, dismiss }) {
     const iconClass = icon ? ` icn-${icon}` : '';
     return (
         <div className={`cinnamon-sugar-crisp ${theme}${iconClass}`}>
@@ -15,15 +16,12 @@ function Component({ message, title, theme='success', icon, dismiss }) {
     );
 }
 
-function crisp({message, title, theme, icon, ...rest}) {
-    return Object.assign({}, {
-        content: ({dismiss}) => (<Component
-            message={message}
-            title={title}
-            theme={theme}
-            icon={icon}
-            dismiss={dismiss}/>)
-    }, rest);
-}
+crisp.propTypes = {
+    message: PropTypes.string,
+    title: PropTypes.string,
+    theme: PropTypes.string,
+    icon: PropTypes.string,
+    dismiss: PropTypes.func
+};
 
 export default crisp;
