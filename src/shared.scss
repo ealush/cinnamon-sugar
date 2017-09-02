@@ -1,0 +1,23 @@
+@keyframes hide {
+    0% { transform: scale(1); }
+    100% { transform: scale(.7); }
+}
+
+@keyframes showUp {
+    0% { transform: translateY(-25px); }
+    100% { transform: translateY(0px); }
+}
+
+
+.butter-toast-tray[class*="top-"] .action-wrapper.shown .toast [class*="cinnamon-sugar-"] {
+    animation: showUp .4s;
+}
+
+.butter-toast-tray[class*="bottom-"] .action-wrapper.shown .toast [class*="cinnamon-sugar-"] {
+    animation: showDown .4s;
+}
+
+.action-wrapper:not(.shown) .toast [class*="cinnamon-sugar-"] {
+    z-index: 0;
+    animation: hide 1s;
+}

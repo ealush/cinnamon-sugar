@@ -5,7 +5,8 @@ function wrapper(kinds, {message, title, theme, icon, kind = 'crisp', ...rest}) 
         return null;
     }
 
-    const Component = kinds[kind];
+    const Component = kinds[kind],
+        wrapperClass = `cs-${kind}`;
 
     return Object.assign({}, {
         content: ({dismiss}) => (<Component
@@ -13,7 +14,8 @@ function wrapper(kinds, {message, title, theme, icon, kind = 'crisp', ...rest}) 
             title={title}
             theme={theme}
             icon={icon}
-            dismiss={dismiss}/>)
+            dismiss={dismiss}/>),
+        wrapperClass
     }, rest);
 }
 
