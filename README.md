@@ -11,3 +11,5 @@ Still a WIP.
 ![alt tag](https://raw.githubusercontent.com/ealush/cinnamon-sugar/master/assets/rec1.gif)
 
 ![alt tag](https://raw.githubusercontent.com/ealush/cinnamon-sugar/master/assets/rec2.gif)
+
+![alt tag](https://raw.githubusercontent.com/ealush/cinnamon-sugar/master/assets/rec3.gif)
