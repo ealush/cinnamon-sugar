@@ -1,22 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function wrapper(kinds, {message, title, theme, icon, kind = 'crisp', ...rest}) {
+function wrapper(kinds, {message, title, theme, icon, kind = 'crisp', noClose = false, ...rest}) {
     if (!kinds[kind]) {
         return null;
     }
 
     const Component = kinds[kind],
-        wrapperClass = `cs-${kind}`;
-
-    return Object.assign({}, {
-        content: ({dismiss}) => (<Component
-            message={message}
+        wrapperClass = `cs-${kind}`,
+        Content = ({dismiss}) => (<Component message={message}
             title={title}
             theme={theme}
             icon={icon}
-            dismiss={dismiss}/>),
+            noClose={noClose}
+            dismiss={dismiss}/>);
+
+    return Object.assign({}, {
+        content: Content,
         wrapperClass
     }, rest);
 }
+
 
 export default wrapper;

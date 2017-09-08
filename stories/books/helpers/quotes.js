@@ -20,6 +20,9 @@ const quotes = [
     'Carpe diem. Seize the day, boys.',
     'To infinity and beyond!',
     'Why so serious?',
-    'How is this a fair trial? Our laywer is a Morty.'];
+    'How is this a fair trial? Our laywer is a Morty.',
+    'Because he\'s the hero Gotham deserves, but not the one it needs right now, so we\'ll hunt him. Because he can take it, because he\'s not a hero. He\'s a silent guardian, a watchful protector, a Dark Knight.',
+    'Madness, as you know, is like gravity, all it takes is a little push'
+];
 
 export default quotes;
