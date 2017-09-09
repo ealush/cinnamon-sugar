@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function wrapper(kinds, {message, title, theme, icon, kind = 'crisp', noClose = false, ...rest}) {
+function wrapper(kinds, {message, title, theme, icon, kind = 'crisp', picture, noClose = false, ...rest}) {
     if (!kinds[kind]) {
         return null;
     }
@@ -11,6 +11,7 @@ function wrapper(kinds, {message, title, theme, icon, kind = 'crisp', noClose = 
         Content = ({dismiss}) => (<Component message={message}
             title={title}
             theme={theme}
+            picture={picture}
             icon={icon}
             noClose={noClose}
             dismiss={dismiss}/>);

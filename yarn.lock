@@ -1375,9 +1375,9 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
 
-butter-toast@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.npmjs.org/butter-toast/-/butter-toast-0.0.7.tgz#947701395b8f49f30b7fcb9e2b885fb4c94a7a31"
+butter-toast@0.0.12:
+  version "0.0.12"
+  resolved "https://registry.npmjs.org/butter-toast/-/butter-toast-0.0.12.tgz#05b4ebd3151defc32ded9b55b0ef3b27ad51add4"
   dependencies:
     babel-runtime "^6.25.0"
     linear-debounce "1.1.0"
