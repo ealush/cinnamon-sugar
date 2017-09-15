@@ -72,11 +72,11 @@ There are currently four different kinds of styles:
     Bright, clean looking toast notification, featuring an icon on the left (optional) and a close button on the right. Appears with a satisfying animation, and has hover effects both for the close button and for the whole tost itself.
 
     crisp accepts the following options:
-        `message`: (optional) Either a string or jsx/react component
-        `title`: (optional) Either a string or jsx/react component
-        `icon`: (optional) Any of font-awesome 4.7 icon names
-        `noClose`: hides the `x` button
-        `theme`: any of the supported themes
+    * `message`: (optional) Either a string or jsx/react component
+    * `title`: (optional) Either a string or jsx/react component
+    * `icon`: (optional) Any of font-awesome 4.7 icon names
+    * `noClose`: hides the `x` button
+    * `theme`: any of the supported themes
 
     The following themes are supported by default. Choosing one will paint the icon accordingly.
     * success (green)
@@ -93,11 +93,11 @@ There are currently four different kinds of styles:
     Plain, colored toast notifications. With an icon on the left, and an optional close button on the top right. The icon appears with a sliding animation.
 
     crunch accepts the following options:
-        `message`: (optional) Either a string or jsx/react component
-        `title`: (optional) Either a string or jsx/react component
-        `icon`: (optional) Any of font-awesome 4.7 icon names
-        `noClose`: hides the `x` button
-        `theme`: any of the supported themes
+    * `message`: (optional) Either a string or jsx/react component
+    * `title`: (optional) Either a string or jsx/react component
+    * `icon`: (optional) Any of font-awesome 4.7 icon names
+    * `noClose`: hides the `x` button
+    * `theme`: any of the supported themes
 
     The following themes are supported by default. Others may be added using custom CSS.
     * grey
@@ -113,12 +113,12 @@ There are currently four different kinds of styles:
     Toast notifications that allow adding an image, an icon and a close button. Good especially for social media or live notification for messages.
 
     fresh accepts the following options:
-        `message`: (optional) Either a string or jsx/react component
-        `title`: (optional) Either a string or jsx/react component
-        `icon`: (optional) Any of font-awesome 4.7 icon names
-        `picture`: (optional) image url
-        `noClose`: hides the `x` button
-        `theme`: any of the supported themes
+    * `message`: (optional) Either a string or jsx/react component
+    * `title`: (optional) Either a string or jsx/react component
+    * `icon`: (optional) Any of font-awesome 4.7 icon names
+    * `picture`: (optional) image url
+    * `noClose`: hides the `x` button
+    * `theme`: any of the supported themes
 
     The following themes are supported by default. Others may be added using custom CSS.
     * lite
@@ -131,8 +131,8 @@ There are currently four different kinds of styles:
     Thin, simple toast notifications. Goot for status updates, and action confirmations.
 
     slim accepts the following options:
-        `message`: Either a string or jsx/react component
-        `theme`: any of the supported themes
+    * `message`: Either a string or jsx/react component
+    * `theme`: any of the supported themes
 
     The following themes are supported by default. Others may be added using custom CSS.
     * lite
