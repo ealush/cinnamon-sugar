@@ -15,7 +15,7 @@ To use Cinnamon-Sugar you need to import it alongside Butter-Toast, and add your
 
 ```js
 import React, { Component } from 'react';
-import cinnamonSugar from '../../src';
+import cinnamonSugar from 'cinnamon-sugar';
 import ButterToast from 'butter-toast';
 
 class ShowOff extends Component {
