@@ -31,7 +31,7 @@
     "butter-toast": "0.0.12",
     "eslint": "4.5.0",
     "eslint-plugin-react": "^7.1.0",
-    "node-sass": "^4.5.3",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.5.10",
     "react": "15.6.1",
     "react-dom": "15.6.1",
